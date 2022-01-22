@@ -1,0 +1,161 @@
+* {
+    font-family: sans-serif;
+}
+
+a {
+    color: #337ab7;
+}
+a:hover {
+    color: #23527c;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0px 0px 21px 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #444444;
+    border-radius: 5px;
+}
+
+#course-name {
+    float: left;
+    padding: 15px;
+    font-size: x-large;
+}
+
+#course-items {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.course-item {
+    padding: 15px;
+    margin: 0px
+}
+
+.course-item a {
+    color: #bbbbbb;
+    text-align: center;
+    text-decoration: none;
+    }
+
+.course-item a:hover {
+    color: white;
+}
+
+.course-banner {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0px 0px 21px 0px;
+}
+
+#course-text {
+    text-align: center;
+    float: left;
+}
+
+#course-text h1 {
+    font-weight: normal;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#course-text h2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+}
+
+#stanford-seal {
+    float: left;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+#stanford-seal img {
+    width: 100px;
+    float: left;
+}
+
+#teaching-team {
+    vertical-align: top;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 15em;
+    display: inline-block;
+}
+
+#announcements {
+    vertical-align: top;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30em - 100px);
+    display: inline-block;
+}
+
+#quick-links {
+    vertical-align: top;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 15em;
+    display: inline-block;
+}
+
+.content-title {
+    color: #959595;
+}
+
+.teacher-profile {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.teacher-photo {
+    width: inherit;
+    height: inherit;
+}
+
+.teacher-description {
+    text-align: center;
+}
+
+.announcement {
+    background-color: #eaf2e9;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c7d1c5;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.announcement-title {
+    color: #175e54;
+    font-size: medium;
+    margin: 0px;
+}
+
+.date-author {
+    font-size: x-small;
+}
+
+.announcement-body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-bar {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+    background-color: #f8f8f8;
+    color: green;
+}

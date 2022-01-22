@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> SHA256 Home</title>
+    <link rel="shortcut icon" type="image/png" href="images/eth-logo.png" />
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="crypto-course-website.css">
+    
+  </head>
+  <body>
+
+    <ul class="navbar">
+      <li id="course-name" class="course-item"><a href="/">SHA256</a></li>
+      <span id="course-items">
+        <li class="course-item"><a href="/">LECTURES</a></li>
+        <li class="course-item"><a href="/">ASSIGNMENTS</a></li>
+        <li class="course-item"><a href="/">OFFICE HOURS</a></li>
+      </span>
+    </ul>
+
+    <div class="course-banner">
+
+      <div id="stanford-seal">
+        <img src="images/btc-logo.png" alt="Stanford University's crest">
+      </div>
+
+      <div id="course-text">
+        <h1>SHA256: Blockchain Programming ₿undamentals </h1>
+        <h2>DeFi Summer 2021</h2>
+      </div>
+
+    </div>
+    <div id="content-area" >
+      
+      <div id="teaching-team">
+        <div class="content-list">
+          
+          <h2 class="content-title">
+            Teaching Team
+          </h2>
+          
+          <div class="teacher-profile">
+            <img class="teacher-photo" src="images/mikeyChang_chainrunner.jpeg" alt="The Supreme Chain Runner">
+            <div class="teacher-description">
+              <span><b>Instructor</b>: <a href="https://mobile.twitter.com/chain_runners">mikeyChang</a> </span>
+            </div>
+          </div>
+          
+          <div class="teacher-profile">
+            <img class="teacher-photo" src="images/youngSharm_boredape.jpeg" alt="King of Bored Apes">
+            <div class="teacher-description">
+              <span><b>Teaching Assistant</b>: <a href="https://twitter.com/youngsharm">youngsharm</a></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="announcements">
+        <div class="content-list">
+
+          <h2 class="content-title">
+            Announcements
+          </h2>
+
+          <div class="announcement">
+            <h3 class="announcement-title">
+              wagmi
+            </h3>
+            <div class="date-author">
+              Posted July 30, 2015 by Bitalik Vuterin
+            </div>
+            <div class="announcement-body">
+              wagmi
+            </div>
+          </div>
+
+          <div class="announcement">
+            <h3 class="announcement-title">
+              gm
+            </h3>
+            <div class="date-author">
+              Posted January 3, 2009 by Natoshi Sakamoto
+            </div>
+            <div class="announcement-body">
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              <br>
+              <br>
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              <br>
+              <br>
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              <br>
+              <br>
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+              gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm gm 
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="quick-links">
+        <div class="content-list">
+          <h2 class="content-title">
+            Quick links
+          </h2>
+
+          <ul class="quick-links">
+            <li><a href="https://boredapeyachtclub.com/#/home">Bored Ape Yacht Club</a></li>
+            <li><a href="https://www.chainrunners.xyz/">Chain Runners</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+  <footer class="footer-bar">CS193X Assignment 1, by Neetish Sharma</footer>
+</html>
